@@ -84,7 +84,7 @@ module.exports = {
 
 You can watch the tutorial for this to start
 
-https://www.youtube.com/channel/UCFyXA9x8lpL3EYWeYhj4C4Q?view_as=subscriber
+https://www.youtube.com/watch?v=ubwVkY8zwcY : 초반 부분
 
 
 # Project Management
