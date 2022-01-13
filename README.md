@@ -4,6 +4,7 @@
 ```
  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>
 
+
 <!-- TABLE OF CONTENTS -->
 ## 목차
 * [About the Project](#about-the-project)
@@ -12,18 +13,12 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Project Management](#Project Management)
-
-
-
+* [Project Management](#project-management)
 
 
 <!-- ABOUT THE PROJECT -->
-<a href="#About the Project"/>
 
 ## About The Project
-
-
 
 ### Built With
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
@@ -32,8 +27,7 @@ This section should list any major frameworks that you built your project using.
 * [Node.js]()
 
 
-
-## Contributor
+### Contributor
 
 <table>
   <tr align="center">
@@ -45,6 +39,10 @@ This section should list any major frameworks that you built your project using.
     <td><img src="https://github.com/hanby-choi.png" width="150"></td>
 </table>
 
+
+### development tools
+ <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white"/>
+  `Notion Home` :  https://www.notion.so/8cd29a83b76848238a5d0edccfbbaecc
 
 
 <!-- GETTING STARTED -->
