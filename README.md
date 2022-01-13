@@ -12,6 +12,8 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
+* [Project Management](#Project Management)
+
 
 
 
@@ -64,7 +66,7 @@ npm install npm@latest -g
 
 1. Clone the repo
 ```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/gdscewha-3rd/Project-CubeEscapeWeb.git
 ```
 2. Install NPM packages twice
 ```sh
@@ -73,6 +75,7 @@ cd client
 npm install
 ```
 Type " npm install " inside the root directory ( Download Server Dependencies )
+<br/>
 Type " npm install " inside the client directory ( Download Front-end Dependencies )
 
 
@@ -88,3 +91,30 @@ You can watch the tutorial for this to start
 
 https://www.youtube.com/channel/UCFyXA9x8lpL3EYWeYhj4C4Q?view_as=subscriber
 
+
+## Project Management
+
+# page routing
+- `/` : 홈
+- `/register` : 회원가입
+- `/intro` : 게임소개
+- `/hint` : 힌트
+- `/forum` : 게시판(커뮤니티)
+- `/review` : 플레이 리뷰(후기)
+- `/report` : 문의 (버그 제보)
+
+
+```
+   <Switch>
+          <Route exact path="/" component={Auth(LandingPage, null)} />
+          <Route exact path="/login" component={Auth(LoginPage, false)} />
+          <Route exact path="/register" component={Auth(RegisterPage, false)} />
+          <Route exact path="/intro" component={Auth(IntroPage, null)} />
+          <Route exact path="/hint" component={Auth(HintPage, null)} />
+          <Route exact path="/forum" component={Auth(ForumPage, null)} />
+          <Route exact path="/review" component={Auth(ReviewPage, null)} />
+          <Route exact path="/report" component={Auth(ReportPage, null)} />
+         
+        </Switch>
+ ```
+   
