@@ -87,9 +87,9 @@ You can watch the tutorial for this to start
 https://www.youtube.com/channel/UCFyXA9x8lpL3EYWeYhj4C4Q?view_as=subscriber
 
 
-## Project Management
+# Project Management
 
-# page routing
+## page routing
 - `/` : 홈
 - `/register` : 회원가입
 - `/intro` : 게임소개
