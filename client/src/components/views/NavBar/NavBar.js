@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Menu from './Sections/Menu';
-import RightMenu from './Sections/RightMenu';
 import { Drawer, Button, Icon } from 'antd';
 import './Sections/Navbar.css';
 
@@ -24,8 +23,14 @@ function NavBar() {
         <div className="menu_left">
           <Menu mode="horizontal" />
         </div>
-
-      
+          
+        <Button
+          className="menu__mobile-button"
+          type="primary"
+          onClick={showDrawer}
+        >
+          <Icon type="align-right" />
+        </Button>
         <Drawer
           title="Basic Drawer"
           placement="right"
