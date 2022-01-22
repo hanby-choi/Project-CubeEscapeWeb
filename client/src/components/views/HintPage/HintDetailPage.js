@@ -23,13 +23,12 @@ function HintDetailPage(props) {
     const hintQuestion = stageInfo[stageId-1].hint.question
     const hintAnswer = stageInfo[stageId-1].hint.answer
 
-    console.log(hintQuestion)
    const getHintContainer =()=>{
         const container=[]
         
         for(var i=0;i<hintQuestion.length;i++){
             container.push( <div>
-                <details style={{color:'white'}}>
+                <details >
                     <summary >STEP{i+1}.{hintQuestion[i]}</summary>
                     <span >{hintAnswer[i]}</span>
                 </details>
