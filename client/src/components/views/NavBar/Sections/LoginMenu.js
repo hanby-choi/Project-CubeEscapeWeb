@@ -32,7 +32,7 @@ function LoginMenu(props) {
     )
   } else {
     return (
-      <Menu mode={props.mode}>
+      <Menu mode={props.mode} style={{backgroundColor:'black'}}>
         <Menu.Item key="logout">
           <a onClick={logoutHandler}>Logout</a>
         </Menu.Item>

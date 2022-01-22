@@ -13,6 +13,12 @@ import ForumPage from './views/ForumPage/ForumPage';
 import ReviewPage from './views/ReviewPage/ReviewPage';
 import ReportPage from './views/ReportPage.js/ReportPage';
 import HintDetailPage from './views/HintPage/HintDetailPage';
+import FreeForumPage from './views/ForumPage/FreeForum';
+import PlayTipForumPage from './views/ForumPage/PlayTipForumPage';
+import IdeaForumPage from './views/ForumPage/IdeaForumPage';
+import PostCreatePage from './views/ForumPage/section/PostCreatePage';
+import PostViewPage from './views/ForumPage/section/PostViewPage';
+
 //null   Anyone Can go inside
 //true   only logged in user can go inside
 //false  logged in user can't go inside
@@ -30,10 +36,14 @@ function App() {
           <Route exact path="/intro" component={Auth(IntroPage, null)} />
           <Route exact path="/hint" component={Auth(HintPage, null)} />
           <Route exact path="/hint/:stageId" component={Auth(HintDetailPage, null)} />
-          <Route exact path="/forum" component={Auth(ForumPage, null)} />
+          <Route exact path="/forum" component={Auth(ForumPage, true)} />
           <Route exact path="/review" component={Auth(ReviewPage, null)} />
           <Route exact path="/report" component={Auth(ReportPage, null)} />
-         
+          <Route exact path="/forum/free" component={Auth(FreeForumPage, true)} />
+          <Route exact path="/forum/playtip" component={Auth(PlayTipForumPage, true)} />
+          <Route exact path="/forum/idea" component={Auth(IdeaForumPage, true)} />
+          <Route exact path={`/forum/free/create`} component={PostCreatePage} /> 
+          <Route exact path={`/forum/free/:postId`} component={PostViewPage} />
         </Switch>
       </div>
       <Footer />

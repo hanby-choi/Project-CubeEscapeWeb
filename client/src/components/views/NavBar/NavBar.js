@@ -26,7 +26,7 @@ function NavBar() {
           <Menu mode="horizontal" />
         </span>
   
-        <Button style={{marginTop:'15px',backgroundColor:'black',color:'white'}}>get started</Button>
+        <Button id="btn" style={{marginTop:'15px',backgroundColor:'black',color:'white'}}>get started</Button>
         <span className="menu_right">
           <LoginMenu mode="horizontal" />
         </span>

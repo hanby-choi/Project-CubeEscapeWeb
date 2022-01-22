@@ -1,5 +1,8 @@
 @import '~antd/dist/antd.css';
 
+#btn:hover{
+  border-color: red;
+}
 .menu {
   padding: 0 20px;
   border-bottom: solid 1px white;
@@ -29,20 +32,17 @@
   padding: 10px 20px;
 }
 
+
 .menu__container .ant-menu-item a,
 .menu__container .ant-menu-submenu-title a {
   padding: 10px 15px;
-  color: white;
+  color: white; 
 }
 .menu__container .ant-menu-item a:hover,
 .menu__container .ant-menu-submenu-title a:hover{
   color: rgb(255, 0, 0);
-  border-bottom: 1px solid red;
 }
 
-.menu__container .ant-menu-horizontal {
-  border-bottom: none;
-}
 
 .menu__container .menu_left {
   float: left;
