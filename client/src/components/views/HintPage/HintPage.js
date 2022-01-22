@@ -21,7 +21,7 @@ function HintPage() {
                         stageId={stageImage.index+1/*고유번호*/}
                         stageName ={`stage${index+1}`}
                        />
-
+                
                    </React.Fragment>
                 ) )}
            </Row>
