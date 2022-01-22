@@ -28,6 +28,7 @@ function App() {
           <Route exact path="/register" component={Auth(RegisterPage, false)} />
           <Route exact path="/intro" component={Auth(IntroPage, null)} />
           <Route exact path="/hint" component={Auth(HintPage, null)} />
+          <Route exact path="/hint/:stageId" component={Auth(ReportPage, null)} />
           <Route exact path="/forum" component={Auth(ForumPage, null)} />
           <Route exact path="/review" component={Auth(ReviewPage, null)} />
           <Route exact path="/report" component={Auth(ReportPage, null)} />
