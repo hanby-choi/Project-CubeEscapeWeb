@@ -11,7 +11,19 @@ import Stage10 from './assets/stage10.png'
 import Stage11 from './assets/stage11.png'
 import Stage12 from './assets/stage12.png'
 import Stage13 from './assets/stage13.png'
-
+import Stage1_text from './assets/stage1_text.png'
+import Stage2_text from './assets/stage2_text.png'
+import Stage3_text from './assets/stage3_text.png'
+import Stage4_text from './assets/stage4_text.png'
+import Stage5_text from './assets/stage5_text.png'
+import Stage6_text from './assets/stage6_text.png'
+import Stage7_text from './assets/stage7_text.png'
+import Stage8_text from './assets/stage8_text.png'
+import Stage9_text from './assets/stage9_text.png'
+import Stage10_text from './assets/stage10_text.png'
+import Stage11_text from './assets/stage11_text.png'
+import Stage12_text from './assets/stage12_text.png'
+import Stage13_text from './assets/stage13_text.png'
 
 const stageImage={
 
@@ -28,6 +40,19 @@ const stageImage={
     stage11Image : Stage11,
     stage12Image : Stage12,
     stage13Image : Stage13,
+    stage1TextImage :Stage1_text,
+    stage2TextImage :Stage2_text,
+    stage3TextImage :Stage3_text,
+    stage4TextImage :Stage4_text,
+    stage5TextImage :Stage5_text,
+    stage6TextImage :Stage6_text,
+    stage7TextImage :Stage7_text,
+    stage8TextImage :Stage8_text,
+    stage9TextImage :Stage9_text,
+    stage10TextImage :Stage10_text,
+    stage11TextImage :Stage11_text,
+    stage12TextImage :Stage12_text,
+    stage13TextImage :Stage13_text,
 }
 
 
