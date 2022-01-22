@@ -2,10 +2,11 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div style={{
+        <div classname="footer" style={{
             height: '80px', display: 'flex',
             flexDirection: 'column', alignItems: 'center',
-            justifyContent: 'center', fontSize:'1rem'
+            justifyContent: 'center', fontSize:'1rem', 
+            backgroundColor: 'black', color: 'white'
         }}>
            <p>
                 <img src="/images/mail_icon.png" width="25" height="25"></img>
