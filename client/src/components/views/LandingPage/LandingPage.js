@@ -1,15 +1,18 @@
 import React from 'react'
-import { FaCode } from "react-icons/fa";
 
 function LandingPage() {
     return (
-        <>
-            <div className="app">
-                <FaCode style={{ fontSize: '4rem' }} /><br />
-                <span style={{ fontSize: '2rem' }}>Let's Start Coding!</span>
-            </div>
-            <div style={{ float: 'right' }}>Thanks For Using This Boiler Plate by John Ahn</div>
-        </>
+        <div className="Landing" style={{
+            height: '800px', display: 'flex', flexDirection: 'column',
+            alignItems: 'center', justifyContent: 'center',
+            color: 'red', fontSize: '70px'
+        }}>
+            <div> CUBE ESCAPE : DEATH GAME </div>
+            <img src="/images/cube.png" width="500" height="500"></img>
+            <div> Will You Join the Game? </div>  
+
+        </div>
+        //<div style={{ float: 'right' }}>Thanks For Using This Boiler Plate by John Ahn</div>
     )
 }
 
