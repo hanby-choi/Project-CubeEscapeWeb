@@ -3,7 +3,7 @@ import {Col} from 'antd';
 
 
 function GridCard(props) {
-    
+    console.log(props.stageId)
     return (
         <Col lg={8} md={12} xs={24}/* 한 줄이 24 size */> 
         <div style={{ position : 'relative'}}>
