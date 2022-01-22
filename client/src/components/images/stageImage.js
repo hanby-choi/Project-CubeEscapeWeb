@@ -24,9 +24,9 @@ import Stage10_text from './assets/stage10_text.png'
 import Stage11_text from './assets/stage11_text.png'
 import Stage12_text from './assets/stage12_text.png'
 import Stage13_text from './assets/stage13_text.png'
-
+import mainImage from './assets/mainmenu.png'
 const stageImage={
-
+    mainImage : mainImage,
     stage1Image : Stage1,
     stage2Image : Stage2,
     stage3Image : Stage3,

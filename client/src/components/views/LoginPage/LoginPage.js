@@ -81,8 +81,8 @@ function LoginPage(props) {
         return (
           <div className="app">
 
-            <Title level={2}>Log In</Title>
-            <form onSubmit={handleSubmit} style={{ width: '350px' }}>
+            <Title style={{color:'white' }} level={2}>Log In</Title>
+            <form onSubmit={handleSubmit} style={{ width: '350px',color:'white' }}>
 
               <Form.Item required>
                 <Input
@@ -98,7 +98,7 @@ function LoginPage(props) {
                   }
                 />
                 {errors.email && touched.email && (
-                  <div className="input-feedback">{errors.email}</div>
+                  <div  className="input-feedback">{errors.email}</div>
                 )}
               </Form.Item>
 
