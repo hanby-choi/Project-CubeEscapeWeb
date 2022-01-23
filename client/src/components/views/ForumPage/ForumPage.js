@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PostViewPage from './section/PostViewPage'
 // 게시판 페이지
 function ForumPage() {
     return (

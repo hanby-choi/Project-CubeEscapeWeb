@@ -1,14 +1,15 @@
 import React from 'react'
 import GridCard from './Sections/GridCard'
 import {Row} from 'antd';
-import stageImage from '../../../components/images/stageImage';
+import stageInfo from '../../../constants/StageInfo';
+import stageImage from '../../images/stageImage';
 
 function HintPage() {
-    const stageImages=[stageImage.stage1Image,stageImage.stage2Image,stageImage.stage3Image,stageImage.stage4Image,stageImage.stage5Image,
-        stageImage.stage6Image,stageImage.stage7Image,stageImage.stage8Image,stageImage.stage9Image,stageImage.stage10Image
-    ,stageImage.stage11Image,stageImage.stage12Image,stageImage.stage13Image]
-
-  
+    const stageTextImages=[stageImage.stage1TextImage,stageImage.stage2TextImage,stageImage.stage3TextImage,stageImage.stage4TextImage,stageImage.stage5TextImage,
+        stageImage.stage6TextImage,stageImage.stage7TextImage,stageImage.stage8TextImage,stageImage.stage9TextImage,stageImage.stage10TextImage
+    ,stageImage.stage11TextImage,stageImage.stage12TextImage,stageImage.stage13TextImage]
+        console.log(stageInfo)
+    
     return (
         <div style={{ width : '100%'}}>
         
@@ -16,12 +17,12 @@ function HintPage() {
 
             <div style={{ width : '70%', margin: '1rem auto'}}>
           <Row gutter={[24,24]}/*상하좌우 여백주기*/> 
-               {stageImages.map((stageImage,index)=>(
+               {stageTextImages.map((stageImage,index)=>(
                    <React.Fragment key={index}>
                        <GridCard 
                         image={stageImage}
                         stageId={index+1/*고유번호*/}
- 
+                        stageName={stageInfo[index].stageName}
                        />
                 
                    </React.Fragment>

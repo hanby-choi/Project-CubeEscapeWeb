@@ -6,7 +6,7 @@ import { USER_SERVER } from '../../../Config';
 import { withRouter } from 'react-router-dom';
 import { useSelector } from "react-redux";
 
-function RightMenu(props) {
+function LoginMenu(props) {
   const user = useSelector(state => state.user)
 
   const logoutHandler = () => {
@@ -21,18 +21,18 @@ function RightMenu(props) {
 
   if (user.userData && !user.userData.isAuth) {
     return (
-      <Menu mode={props.mode}>
+      <Menu mode={props.mode} style={{backgroundColor:'black'}}>
         <Menu.Item key="mail">
-          <a href="/login">Signin</a>
+          <a href="/login">로그인</a>
         </Menu.Item>
         <Menu.Item key="app">
-          <a href="/register">Signup</a>
+          <a href="/register">회원가입</a>
         </Menu.Item>
       </Menu>
     )
   } else {
     return (
-      <Menu mode={props.mode}>
+      <Menu mode={props.mode} style={{backgroundColor:'black'}}>
         <Menu.Item key="logout">
           <a onClick={logoutHandler}>Logout</a>
         </Menu.Item>
@@ -41,5 +41,5 @@ function RightMenu(props) {
   }
 }
 
-export default withRouter(RightMenu);
+export default withRouter(LoginMenu);
 

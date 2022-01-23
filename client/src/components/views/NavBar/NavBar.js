@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Menu from './Sections/Menu';
 import { Drawer, Button, Icon } from 'antd';
 import './Sections/Navbar.css';
+import LoginMenu from './Sections/LoginMenu';
+
 
 function NavBar() {
   const [visible, setVisible] = useState(false)
@@ -20,28 +22,18 @@ function NavBar() {
         <a href="/">Cubeescape</a>
       </div>
       <div className="menu__container">
-        <div className="menu_left">
+      <span className="menu_left">
           <Menu mode="horizontal" />
-        </div>
+        </span>
+  
+        <Button id="btn" style={{marginTop:'15px',backgroundColor:'black',color:'white'}}>get started</Button>
+        <span className="menu_right">
+          <LoginMenu mode="horizontal" />
+        </span>
+        
           
-        <Button
-          className="menu__mobile-button"
-          type="primary"
-          onClick={showDrawer}
-        >
-          <Icon type="align-right" />
-        </Button>
-        <Drawer
-          title="Basic Drawer"
-          placement="right"
-          className="menu_drawer"
-          closable={false}
-          onClose={onClose}
-          visible={visible}
-        >
-          <Menu mode="inline" />
-         
-        </Drawer>
+    
+        
       </div>
     </nav>
   )
