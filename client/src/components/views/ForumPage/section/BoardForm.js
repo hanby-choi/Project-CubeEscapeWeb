@@ -8,11 +8,11 @@ class BoardRow extends Component {
     return (
       <tr>
         <td>
-          {this.props.postId}
+          {this.props.postNum}
         </td>
         <td>
           <NavLink
-            to={{ pathname: `/board/${this.props.type}/detail/:${this.props.postId}` }}
+            to={{ pathname: `/forum/${this.props.type}/${this.props.postId}` }}
           >
             {this.props.title}
           </NavLink>
@@ -39,24 +39,25 @@ class BoardForm extends Component {
   }
 
   getBoardList = () => {
-    const send_param = {
-      type:this.props.type,
-    };
+
     //type에 맞는 게시판 목록 가져오기
     
     Axios.post('/api/board/getBoardList',{ type : this.props.type})
     .then(response=>{
       console.log(response)
       if(response.data.success){
-        alert('게시글 목록을 가져오는데 성공했습니다.');
+       
         const boards = response.data.boardList;
+        const numOfBoard = response.data.boardList.length;
         const boardRowList= boards.map((item,idx) => (
           <BoardRow
             key={idx}
+            postNum={numOfBoard-idx}
             postId={item.postId}
             createdAt={item.createdAt}
             title={item.title}
             writer={item.writer}
+            type={item.type}
           /> ));
           this.setState({
             boardRowList: boardRowList
@@ -83,7 +84,7 @@ class BoardForm extends Component {
     return (
       <div style={divStyle}>
        
-        <table class="table" style={tableStyle}>
+        <table className="table" style={tableStyle}>
   <thead>
     <tr>
       <th scope="col">#</th>

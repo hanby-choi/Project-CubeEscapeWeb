@@ -7,18 +7,18 @@ import Axios from 'axios';
 function PostCreatePage(props) { // 
   const [title,setTitle] =useState('default title');
   const [content,setContent]=useState('default content');
-  
-   const type = 'free' ; // 
-    console.log(content);
-    console.log(title);
+  const url = props.match.url;
+  const url_token=url.split('/');
+   const type = url_token[2] ; // 
+
 //type,writer,postId,title,content,createdAt
 
    const uploadPost = ()=>{
        let postInfo=
        {
-           type : 'free',
+           type : type,
            writer : localStorage.getItem('userId'),
-           postId : 1, // 글 고유 번호
+           postId : Date.now(), // 글 고유 번호
            title : title,
            content : content,
            createdAt : Date.now()
