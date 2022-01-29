@@ -26,7 +26,7 @@ const boardSchema = mongoose.Schema({
    },
    createdAt:{ // 글을 생성한 날짜 
        type : Date,
-       default : Date.now
+       default : Date.now()
    }
 },{timestamps:true})
 

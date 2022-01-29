@@ -1,16 +1,15 @@
 const express = require('express');
 const router = express.Router();
-const { Board } = require("../models/User");
+const { Board } = require("../models/Board");
 
 
 //=================================
 //             Board
 //=================================
 
-
 // 게시글 추가하기
 router.post('/create',(req,res)=>{
-    const board = new Board(req.body)
+    const board = new Board(req.body);
 
     board.save((err,doc)=>{
         if(err) return res.status(400).send(err);
@@ -47,10 +46,10 @@ router.post('/update',(req,res)=>{
 // 자유OR공략OR아이디어 게시판에서 전체 게시글 내용 불러오기 요청
 router.post('/getBoardList',(req,res)=>{
    
-    Favorite.find({type: req.body.type,sort:{createdAt:-1}})
+    Board.find({type: req.body.type})
     .exec((err,boardList)=>{ 
-        if(err) return response.status(400).send(arr)
-        return response.status(200).json({success: true, boardList})
+        if(err) return res.status(400).send(arr)
+        return res.status(200).json({success: true, boardList})
     })
     
 });

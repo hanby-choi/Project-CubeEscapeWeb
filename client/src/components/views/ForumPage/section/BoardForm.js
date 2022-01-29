@@ -8,19 +8,22 @@ class BoardRow extends Component {
     return (
       <tr>
         <td>
-          <NavLink
-            to={{ pathname: `/board/${this.props.type}/detail`, query: { postId: this.props.postId } }}
-          >
-            {this.props.createdAt.substring(0, 10)}
-          </NavLink>
+          {this.props.postId}
         </td>
         <td>
           <NavLink
-            to={{ pathname: `/board/${this.props.type}/detail`, query: { postId: this.props.postId } }}
+            to={{ pathname: `/board/${this.props.type}/detail/:${this.props.postId}` }}
           >
             {this.props.title}
           </NavLink>
         </td>
+        <td>
+          {this.props.writer}
+        </td>
+        <td>
+            {this.props.createdAt.substring(0, 10)}
+        </td>
+       
       </tr>
     );
   }
@@ -28,26 +31,11 @@ class BoardRow extends Component {
 
 class BoardForm extends Component {
   state = {
-    boardList: [[<tr>
-      <td >3</td>
-      <td >타이틀제목</td>
-      <td >asdvs</td>
-      <td >2022.01.24</td>
-    </tr>],[<tr>
-      <td >2</td>
-      <td >타이틀제목</td>
-      <td >asdvs</td>
-      <td >2022.01.24</td>
-    </tr>],[<tr>
-      <td >1</td>
-      <td >타이틀제목</td>
-      <td >asdvs</td>
-      <td >2022.01.24</td>
-    </tr>]]
+    boardRowList: []
   };
 
   componentDidMount() {
-    //this.getBoardList();
+    this.getBoardList();
   }
 
   getBoardList = () => {
@@ -55,42 +43,31 @@ class BoardForm extends Component {
       type:this.props.type,
     };
     //type에 맞는 게시판 목록 가져오기
-    Axios
-      .post("api/board/getBoardList", send_param)
-      .then(returnData => {
-        let boardList;
-        console.log(returnData)
-        if (returnData.data.boardList.length > 0) {
-          // console.log(returnData.data.list.length);
-          const boards = returnData.data.list;
-          boardList = boards.map(item => (
-            <BoardRow
-              key={Date.now() + Math.random() * 500}
-              _id={item.postId}
-              createdAt={item.createdAt}
-              title={item.title}
-              type={this.props.type}
-            ></BoardRow>
-          ));
-          // console.log(boardList);
+    
+    Axios.post('/api/board/getBoardList',{ type : this.props.type})
+    .then(response=>{
+      console.log(response)
+      if(response.data.success){
+        alert('게시글 목록을 가져오는데 성공했습니다.');
+        const boards = response.data.boardList;
+        const boardRowList= boards.map((item,idx) => (
+          <BoardRow
+            key={idx}
+            postId={item.postId}
+            createdAt={item.createdAt}
+            title={item.title}
+            writer={item.writer}
+          /> ));
           this.setState({
-            boardList: boardList
+            boardRowList: boardRowList
           });
-        } else {
-          boardList = (
-            <tr>
-              <td colSpan="2">작성한 게시글이 존재하지 않습니다.</td>
-            </tr>
-          );
-          this.setState({
-            boardList: boardList
-          });
-          // window.location.reload();
-        }
-      })
-      .catch(err => {
-        console.log(err);
-      });
+      }else{
+        alert('게시글 목록을 가져오는데 실패했습니다.');
+        window.location.reload();
+      }
+
+    })
+     
   };
 
   render() {
@@ -116,7 +93,7 @@ class BoardForm extends Component {
     </tr>
   </thead>
   <tbody>
-    {this.state.boardList}
+    {this.state.boardRowList}
   </tbody>
 </table>
       </div>

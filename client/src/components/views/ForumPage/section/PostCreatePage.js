@@ -4,29 +4,59 @@ import {Button,Form} from 'react-bootstrap';
 import Axios from 'axios';
 
 //props로 타입 전달.
-function PostCreatePage(props) {
-   const [data,setData] = useState("");
+function PostCreatePage(props) { // 
+  const [title,setTitle] =useState('default title');
+  const [content,setContent]=useState('default content');
+  
    const type = 'free' ; // 
-   console.log(data);
+    console.log(content);
+    console.log(title);
+//type,writer,postId,title,content,createdAt
 
-   const savePost = ()=>{
-       alert('글이 저장되었습니다.');
+   const uploadPost = ()=>{
+       let postInfo=
+       {
+           type : 'free',
+           writer : localStorage.getItem('userId'),
+           postId : 1, // 글 고유 번호
+           title : title,
+           content : content,
+           createdAt : Date.now()
+       
+       }
+       
+    Axios.post('/api/board/create',postInfo)
+    .then(response=>{
+            console.log(response);
+        if(response.data.success){
+            alert('글을 올렸습니다.');
+            window.location.href='/forum/free';
+        }
+        else{
+            alert('upload에 실패했습니다.');
+        }
+    })
+       
    }
+ 
 
     return (
-        <div style={{color:'white'}}>
+        <div >
             <Form.Control
           type="text"
           placeholder="글 제목"
-
+          value = {title}
+          onChange={(event)=>setTitle(event.target.value)}
+         
         />
            <CKEditor
-          data={data}
-          onChange={(event)=>setData(event.editor.getData())}
+          data={content}
+          onChange={(event)=>setContent(event.editor.getData())}
         ></CKEditor>
-           <Button onClick={savePost} block>
-          저장하기
+           <Button onClick={uploadPost} block>
+          올리기
         </Button>
+    
         </div>
     )
 }

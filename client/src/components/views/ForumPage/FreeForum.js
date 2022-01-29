@@ -10,7 +10,7 @@ function FreeForumPage({match}) {
 
   useEffect(() => {
      
-    
+    //getBoardList();
   }, [])
 
 
@@ -20,7 +20,7 @@ function FreeForumPage({match}) {
     .then(response=>{
       console.log(response)
       if(response.data.success){
-
+        alert('게시글 목록을 가져오는데 성공했습니다.');
       }else{
         alert('게시글 목록을 가져오는데 실패했습니다.');
       }
