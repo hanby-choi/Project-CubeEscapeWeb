@@ -15,7 +15,7 @@ function LeftMenu(props) {
     <SubMenu title={<a href="/forum">게시판</a>}>
         <Menu.Item key="setting:1"><a href="/forum/free">자유게시판</a></Menu.Item>
         <Menu.Item key="setting:2"><a href="/forum/playtip">공략게시판</a></Menu.Item>
-        <Menu.Item key="setting:2"><a href="/forum/idea">아이디어게시판</a></Menu.Item>
+        <Menu.Item key="setting:3"><a href="/forum/idea">아이디어게시판</a></Menu.Item>
     </SubMenu>
     <Menu.Item key='review'>
       <a href="/review">리뷰</a>
