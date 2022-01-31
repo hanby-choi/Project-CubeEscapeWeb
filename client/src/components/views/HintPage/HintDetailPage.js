@@ -40,6 +40,7 @@ function HintDetailPage(props) {
             <div style={{marginBottom:'10px'}}>{getDifficulty()}</div>
             <h3 style={{color:'white',fontFamily:'휴먼 아미체'}}>Hints</h3>
             <div>{getHintContainer()}</div>
+            <div>sadfsadfsadfsdafsad</div>
             </div>
         </div>
     )
