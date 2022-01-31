@@ -19,7 +19,7 @@ function NavBar() {
   return (
     <nav className="menu" style={{ position: 'fixed', zIndex: 5, width: '100%', backgroundColor:'black' }}>
       <div className="menu__logo">
-        <a href="/">Cubeescape</a>
+        <a href="/">CUBE ESCAPE</a>
       </div>
       <div className="menu__container">
       <span className="menu_left">

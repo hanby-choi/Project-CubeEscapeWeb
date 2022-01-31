@@ -18,6 +18,7 @@ import PlayTipForumPage from './views/ForumPage/PlayTipForumPage';
 import IdeaForumPage from './views/ForumPage/IdeaForumPage';
 import PostCreatePage from './views/ForumPage/section/PostCreatePage';
 import PostViewPage from './views/ForumPage/section/PostViewPage';
+import CreditPage from './views/CreditPage/CreditPage.js';
 
 //null   Anyone Can go inside
 //true   only logged in user can go inside
@@ -44,6 +45,7 @@ function App() {
           <Route exact path="/forum/idea" component={Auth(IdeaForumPage, true)} />
           <Route exact path={`/forum/free/create`} component={PostCreatePage} /> 
           <Route exact path={`/forum/free/:postId`} component={PostViewPage} />
+          <Route exact path="/credit" component={Auth(CreditPage, null)} />
         </Switch>
       </div>
       <Footer />
