@@ -1,0 +1,15 @@
+@import '../../App.css';
+
+.landing {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing_title{
+    color: red;
+    font-size: 70px; 
+    font-family: 'Oranienbaum', serif;
+}

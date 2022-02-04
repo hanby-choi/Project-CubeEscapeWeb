@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../App.css'
 
 function Footer() {
     return (
@@ -7,7 +8,7 @@ function Footer() {
             flexDirection: 'column', alignItems: 'center',
             justifyContent: 'center', fontSize:'1rem', 
             backgroundColor: 'black', color: 'white',
-            paddingTop: '20px', textAlign: 'center'
+            paddingTop: '20px', textAlign: 'center', fontFamily: 'Oranienbaum'
         }}>
            <div>
                 <img src="/images/mail_icon.png" width="25" height="25"></img>

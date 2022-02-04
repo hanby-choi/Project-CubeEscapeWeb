@@ -1,5 +1,5 @@
 import React from 'react'
-import './IntroPage.css';
+import './IntroPage.css'
 
 function IntroPage() {
     return (
@@ -39,9 +39,9 @@ function IntroPage() {
             <img src="/images/open-book.png" style={{width: "10%", height: "10%", marginLeft: "15px"}}></img>
             </div>
             <div className="intro_body">
-                <span style={{marginRight: "50px"}}>1인칭 시점 방 탈출</span>
+                <span style={{marginLeft:"20px", marginRight: "30px"}}>1인칭 시점 방 탈출</span>
                 <span style={{marginRight: "50px"}}>미스터리 퍼즐 어드벤처</span>
-                <span style={{marginLeft:"50px", marginRight: "50px"}}>스토리</span>
+                <span style={{marginLeft:"30px", marginRight: "85px"}}>스토리</span>
             </div>
             <br></br>
             <br></br>
@@ -52,9 +52,10 @@ function IntroPage() {
 
             <div className="intro_title">PLAY VIDIO</div>
             <br></br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/XaHfOkf_mpI" 
+            <iframe width="1008" height="567" src="https://www.youtube.com/embed/XaHfOkf_mpI" 
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br></br>
         </div>
     )
 }
