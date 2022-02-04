@@ -135,12 +135,3 @@ function IntroPage() {
 }
 
 export default IntroPage
-
-/*
-            <table>
-                <tr>
-                <td><img src="/images/exit.png" width="40%" height="40%"></img></td>
-                <td><img src="/images/mysterious.png" width="30%" height="30%"></img></td>
-                <td><img src="/images/open-book.png" width="30%" height="30%"></img></td>
-                </tr>
-            </table>*/
