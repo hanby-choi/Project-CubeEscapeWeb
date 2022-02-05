@@ -23,9 +23,6 @@ function LeftMenu(props) {
     <Menu.Item key='report'>
       <a href="/report">문의/버그 제보</a>
     </Menu.Item>
-    <Menu.Item >
-      <a href="/credit">크레딧</a>
-    </Menu.Item>
    
   </Menu>
   )
