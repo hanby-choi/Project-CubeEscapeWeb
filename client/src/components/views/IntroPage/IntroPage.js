@@ -5,10 +5,15 @@ import stageImage from '../../images/stageImage'
 function IntroPage() {
     return (
         <div className="intro">
-            <a name="top"> </a>
+            <div style={{position: 'absolute', top: '0px'}}><a name="story"> </a></div>
+            <div style={{position: 'absolute', top: '400px'}}><a name="download"> </a></div>
+            <div style={{position: 'absolute', top: '650px'}}><a name="system"> </a></div>
+            <div style={{position: 'absolute', top: '1110px'}}><a name="recommend"> </a></div>
+            <div style={{position: 'absolute', top: '3180px'}}><a name="vidio"> </a></div>
+
             <img src="/images/cube_with_hands.png" width="40%" height="40%"></img>
             <br></br>
-            <div className="intro_title"><a name="story">CUBE ESCAPE : DEATH GAME</a></div>
+            <div className="intro_title">CUBE ESCAPE : DEATH GAME</div>
             <div className="intro_body">
                 <p>
                     정신을 차려보니 정체를 알 수 없는 큐브 공간속에 갇혀 있었다.<br></br>
@@ -27,12 +32,12 @@ function IntroPage() {
             </div>
 
             <p>
-                <a name="download" href="" download><button class="intro_button">Join the Game<div style={{fontSize: "70%"}}>(Download)</div></button></a>
+                <a href="" download><button class="intro_button">Join the Game<div style={{fontSize: "70%"}}>(Download)</div></button></a>
                 <br></br>
                 <br></br>
             </p>
 
-            <div className="intro_title"><a name="system">SYSTEM</a></div>
+            <div className="intro_title">SYSTEM</div>
             <div style={{textAlign: "center", paddingTop: "10px"}}>
             <img src="/images/exit_resize.png" style={{width: "10%", height: "10%", marginLeft: "15px"}}></img>
             <img src="/images/cancel.png" width="5%" height="5%"></img>
@@ -48,7 +53,7 @@ function IntroPage() {
             <br></br>
             <br></br>
             
-            <div className="intro_title"><a name="recommend">STAGE RECOMMENDATION</a></div>
+            <div className="intro_title">STAGE RECOMMENDATION</div>
             <div className="intro_body">
                 <p>
                     1. 스토리를 중요하게 생각하시는 분
@@ -111,7 +116,7 @@ function IntroPage() {
             <br></br>
 
 
-            <div className="intro_title"><a name="vidio">PLAY VIDIO</a></div>
+            <div className="intro_title">PLAY VIDIO</div>
             <br></br>
             <iframe width="1008" height="567" src="https://www.youtube.com/embed/XaHfOkf_mpI" 
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
@@ -126,7 +131,6 @@ function IntroPage() {
                         <li><a href="#system">System</a></li>
                         <li><a href="#recommend">Stage Recommendation</a></li>
                         <li><a href="#vidio">Play Vidio</a></li>
-                        <li><a href="#top">Top</a></li>
                     </ul>
                 </nav>
             </div>
