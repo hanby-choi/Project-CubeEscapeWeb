@@ -5,7 +5,7 @@ const stageInfo=[
     stageImage:stageImage.stage1Image,difficulty:3,recommendTo:''},
     {stageId:2,stageName:'The White Gallery',stageText:'stage Introduction',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage2Image,difficulty:5},
     {stageId:3,stageName:'The Christmas',stageText:'stage Introduction',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage3Image,difficulty:4},
-    {stageId:4,stageName:'The Liar',stageText:'stage Introduction',hint:[['Q1','Q2','Q3'] ,["hint1","hint2","hint3"]],stageImage:stageImage.stage4Image,difficulty:4},
+    {stageId:4,stageName:'The Liar',stageText:'stage Introduction',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage4Image,difficulty:4},
     {stageId:5,stageName:'The River Of Oblivion',stageText:'stage Introduction',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage5Image,difficulty:5},
     {stageId:6,stageName:'The Nightmare',stageText:'stage Introduction',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage6Image,difficulty:4},
     {stageId:7,stageName:'The Reverse',stageText:'모든것이 거꾸로인 공간\n “발을 조금이라도 잘못딛는 순간 넌 끝없는 나락속으로 떨어지고 말걸”',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage7Image,difficulty:3},

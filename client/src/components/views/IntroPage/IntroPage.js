@@ -1,9 +1,16 @@
 import React from 'react'
-import './IntroPage.css';
+import './IntroPage.css'
+import stageImage from '../../images/stageImage'
 
 function IntroPage() {
     return (
         <div className="intro">
+            <div style={{position: 'absolute', top: '0px'}}><a name="story"> </a></div>
+            <div style={{position: 'absolute', top: '400px'}}><a name="download"> </a></div>
+            <div style={{position: 'absolute', top: '650px'}}><a name="system"> </a></div>
+            <div style={{position: 'absolute', top: '1110px'}}><a name="recommend"> </a></div>
+            <div style={{position: 'absolute', top: '3180px'}}><a name="vidio"> </a></div>
+
             <img src="/images/cube_with_hands.png" width="40%" height="40%"></img>
             <br></br>
             <div className="intro_title">CUBE ESCAPE : DEATH GAME</div>
@@ -25,7 +32,7 @@ function IntroPage() {
             </div>
 
             <p>
-                <a href="" download><button class="intro_button">Join the Game</button></a>
+                <a href="" download><button class="intro_button">Join the Game<div style={{fontSize: "70%"}}>(Download)</div></button></a>
                 <br></br>
                 <br></br>
             </p>
@@ -39,33 +46,96 @@ function IntroPage() {
             <img src="/images/open-book.png" style={{width: "10%", height: "10%", marginLeft: "15px"}}></img>
             </div>
             <div className="intro_body">
-                <span style={{marginRight: "50px"}}>1인칭 시점 방 탈출</span>
+                <span style={{marginLeft:"20px", marginRight: "30px"}}>1인칭 시점 방 탈출</span>
                 <span style={{marginRight: "50px"}}>미스터리 퍼즐 어드벤처</span>
-                <span style={{marginLeft:"50px", marginRight: "50px"}}>스토리</span>
+                <span style={{marginLeft:"30px", marginRight: "85px"}}>스토리</span>
             </div>
             <br></br>
             <br></br>
             
             <div className="intro_title">STAGE RECOMMENDATION</div>
+            <div className="intro_body">
+                <p>
+                    1. 스토리를 중요하게 생각하시는 분
+                    <div style={{textAlign: "center", paddingTop: "10px"}}>
+                    <img src={stageImage.stage1TextImage} style={{width: "25%", height: "25%"}}></img>
+                    <img src={stageImage.stage8TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}}></img>
+                    </div>
+
+                </p>
+                <p>
+                    2. 컨트롤에 자신 있으신 분
+                    <div style={{textAlign: "center", paddingTop: "10px"}}>
+                    <img src={stageImage.stage7TextImage} style={{width: "25%", height: "25%"}}></img>
+                    <img src={stageImage.stage11TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}}></img>
+                    </div>
+
+                </p>
+                <p>
+                    3. 논리적이고 감각적인 분, 수수께끼에 자신 있으신 분
+                    <div style={{textAlign: "center", paddingTop: "10px"}}>
+                    <img src={stageImage.stage2TextImage} style={{width: "25%", height: "25%"}}></img>
+                    <img src={stageImage.stage4TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}}></img>
+                    <img src={stageImage.stage12TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}}></img>
+                    </div>
+
+                </p>
+                <p>
+                    4. 풍광을 중요하게 생각하시는 분
+                    <div style={{textAlign: "center", paddingTop: "10px"}}>
+                    <img src={stageImage.stage5TextImage} style={{width: "25%", height: "25%"}}></img>
+                    </div>
+
+                </p>
+                <p>
+                    5. 공포와 마주하고 싶으신 분
+                    <div style={{textAlign: "center", paddingTop: "10px"}}>
+                    <img src={stageImage.stage6TextImage} style={{width: "25%", height: "25%"}}></img>
+                    <img src={stageImage.stage13TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}}></img>
+                    </div>
+
+                </p>
+                <p>
+                    6. 새로움을 느끼고 싶으신 분
+                    <div style={{textAlign: "center", paddingTop: "10px"}}>
+                    <img src={stageImage.stage3TextImage} style={{width: "25%", height: "25%"}}></img>
+                    <img src={stageImage.stage9TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}}></img>
+                    </div>
+
+                </p>
+                <p>
+                    7. 운을 시험해보고 싶으신 분
+                    <div style={{textAlign: "center", paddingTop: "10px"}}>
+                    <img src={stageImage.stage10TextImage} style={{width: "25%", height: "25%"}}></img>
+                    </div>
+
+                </p>
+
+            </div>
             <br></br>
             <br></br>
 
+
             <div className="intro_title">PLAY VIDIO</div>
             <br></br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/XaHfOkf_mpI" 
+            <iframe width="1008" height="567" src="https://www.youtube.com/embed/XaHfOkf_mpI" 
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br></br>
+            
+            <div className="intro_nav">
+                <nav>
+                    <ul style={{listStyle: "none", paddingLeft: "0px"}}>
+                        <li><a href="#story">Story</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#system">System</a></li>
+                        <li><a href="#recommend">Stage Recommendation</a></li>
+                        <li><a href="#vidio">Play Vidio</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     )
 }
 
 export default IntroPage
-
-/*
-            <table>
-                <tr>
-                <td><img src="/images/exit.png" width="40%" height="40%"></img></td>
-                <td><img src="/images/mysterious.png" width="30%" height="30%"></img></td>
-                <td><img src="/images/open-book.png" width="30%" height="30%"></img></td>
-                </tr>
-            </table>*/
