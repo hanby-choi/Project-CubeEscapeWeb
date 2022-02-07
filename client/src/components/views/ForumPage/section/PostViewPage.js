@@ -14,6 +14,13 @@ function PostViewPage(props) {
     const [authorId,setAuthorId]=useState();
     
     useEffect(()=>{
+        const script = document.createElement("script");
+
+        script.src = "https://use.typekit.net/foobar.js";
+        script.async = true;
+    
+        document.body.appendChild(script);
+    
         Axios.post('/api/board/getBoardDetail',{type:type,postId:postId })
         .then((response)=>{
             console.log(response);
@@ -50,13 +57,14 @@ function PostViewPage(props) {
    
 
     return (
-        <div>
+        <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',padding:'50px'}}>
           
-            {title}
+            <h1 style={{backgroundColor:'white',color:'black',borderRadius:'10px'}}>{title}</h1>
             <br/>
-            <section>{content}</section>
+            <section style={{backgroundColor:'white',color:'black',borderRadius:'10px',width:'70%'}}>{content}</section>
+            <br/>
             <div>updatedAt : {updatedDate} </div>
-            {localStorage.getItem('userId')==authorId?<Button onClick ={deletePost} style={{float : 'right',marginRight: '30px'}} variant="light">글삭제</Button>:null}
+            {localStorage.getItem('userId')==authorId?<Button onClick ={deletePost} style={{alignSelf:'flex-end' ,marginRight: '30px'}} variant="light">글삭제</Button>:null}
             
         </div>
     )
