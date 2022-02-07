@@ -4,8 +4,8 @@
 .menu__container .ant-menu-submenu-title a {
   padding: 10px 15px;
   color: white; 
-  
 }
+
 #btn:hover{
   border-color: red;
 }
@@ -39,12 +39,18 @@ a:hover { text-decoration:none !important }
   padding: 10px 20px;
 }
 
+.submenu:hover{
+color:red !important;
+}
 
 .menu__container .ant-menu-item a:hover,
-.menu__container .ant-menu-submenu-title a:hover{
+.menu__container .ant-menu-submenu :hover{
   color: rgb(255, 0, 0);
 }
 
+.hoverToRed:hover{
+  border-bottom: 1px solid red !important;
+}
 
 .menu__container .menu_left {
   float: left;

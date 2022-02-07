@@ -28,7 +28,7 @@ function NavBar() {
           <Menu mode="horizontal" />
         </span>
   
-        <a href="" download><Button id="btn" style={{marginTop:'15px', backgroundColor:'black', color:'white', fontFamily: 'Oranienbaum',float:'right'}}>Get Started</Button></a>
+        <a href="" download><Button id="btn" style={{marginTop:'15px', backgroundColor:'black', color:'white',float:'right'}}>Get Started</Button></a>
         <span className="menu_right">
           <LoginMenu mode="horizontal" />
         </span>
