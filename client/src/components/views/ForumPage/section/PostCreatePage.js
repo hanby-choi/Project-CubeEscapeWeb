@@ -30,7 +30,7 @@ function PostCreatePage(props) { //
             console.log(response);
         if(response.data.success){
             alert('글을 올렸습니다.');
-            window.location.href='/forum/free';
+            window.location.href=`/forum/${type}`;
         }
         else{
             alert('upload에 실패했습니다.');
