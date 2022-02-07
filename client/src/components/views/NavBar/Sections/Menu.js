@@ -7,10 +7,10 @@ function LeftMenu(props) {
   return (
     <Menu mode={props.mode} style={{backgroundColor:'black'}}>
     <Menu.Item key='intro' >
-      <a href="/intro">게임소개</a>
+      <a href="/intro" >게임소개</a>
     </Menu.Item>
     <Menu.Item key='hint'>
-      <a href="/hint">공략법/힌트</a>
+      <a href="/hint" onClick={(e)=>{e.preventDefault();}}>공략법/힌트</a>
     </Menu.Item>
     <SubMenu title={<a href="/forum">게시판</a>}>
         <Menu.Item key="setting:1"><a href="/forum/free">자유게시판</a></Menu.Item>
