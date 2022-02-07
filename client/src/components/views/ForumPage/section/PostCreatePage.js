@@ -53,7 +53,7 @@ function PostCreatePage(props) { //
           data={content}
           onChange={(event)=>setContent(event.editor.getData())}
         ></CKEditor>
-           <Button onClick={uploadPost} block>
+           <Button onClick={uploadPost} block="true">
           올리기
         </Button>
     
