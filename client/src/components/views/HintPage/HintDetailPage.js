@@ -1,6 +1,9 @@
 import React from 'react'
 import MainImage from './Sections/MainImage'
+import Credit from './Sections/Credit'
 import stageInfo from '../../../constants/StageInfo';
+import StageCredit from '../../../constants/StageCredit';
+
 
 function HintDetailPage(props) {
     let stageId = props.match.params.stageId;
@@ -34,13 +37,15 @@ function HintDetailPage(props) {
    } 
     return (
         <div>
-            <MainImage image={stageInfo[stageId-1].stageImage} stageId={stageId} stageName={stageInfo[stageId-1].stageName} stageText={stageInfo[stageId-1].stageText}></MainImage>
-            <div style={{width:'70%',fontSize:'1rem',margin:'20px'}}>
-            <h3 style={{color:'white',fontFamily:'휴먼 아미체'}}>Difficulty</h3> 
-            <div style={{marginBottom:'10px'}}>{getDifficulty()}</div>
-            <h3 style={{color:'white',fontFamily:'휴먼 아미체'}}>Hints</h3>
-            <div>{getHintContainer()}</div>
-            <div>sadfsadfsadfsdafsad</div>
+
+            <div style={{width:'70%', fontSize:'1rem', padding:'20px'}}>
+                <h3 style={{color:'white', fontFamily:'휴먼 아미체'}}>Difficulty</h3> 
+                <div style={{marginBottom:'10px'}}>{getDifficulty()}</div>
+                <h3 style={{color:'white', fontFamily:'휴먼 아미체'}}>Hints</h3>
+                <div>{getHintContainer()}</div>
+                <h3 style={{color:'white', fontFamily:'NotoSerifKR', paddingTop: '10px'}}>Credit</h3>
+                <Credit creditTitle={StageCredit[stageId-1].creditTitle} creditBody={StageCredit[stageId-1].creditBody}></Credit>
+
             </div>
         </div>
     )

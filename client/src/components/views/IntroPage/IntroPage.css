@@ -13,7 +13,8 @@
     border-bottom: solid;
     border-width: 1px;
     border-color: white;
-    font-family: "NotoSerifKR";
+    font-family: 'Oranienbaum', serif;
+    font-weight: 700;
 }
 
 .intro_body {
@@ -29,7 +30,32 @@
     background-color: red;
     color: white;
     width: 200px;
-    height: 50px;
+    height: 80px;
     font-size: 150%;
-    font-family: "NotoSerifKR";
+    font-family: 'Oranienbaum', serif;
+}
+
+.intro_nav{
+    float: center;
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    top: 45%;
+    left: 20px;
+    margin: 0px;
+}
+
+.intro_nav li{
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.intro_nav li a{
+    font-size: 100%;
+    font-family: 'Oranienbaum', serif;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
 }
