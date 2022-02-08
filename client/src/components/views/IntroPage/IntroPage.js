@@ -10,7 +10,7 @@ function IntroPage() {
             <div style={{position: 'absolute', top: '650px'}}><a name="system"> </a></div>
             <div style={{position: 'absolute', top: '1110px'}}><a name="intro"> </a></div>
             <div style={{position: 'absolute', top: '1820px'}}><a name="recommend"> </a></div>
-            <div style={{position: 'absolute', top: '3180px'}}><a name="vidio"> </a></div>
+            <div style={{position: 'absolute', top: '3770px'}}><a name="vidio"> </a></div>
 
             <img src="/images/cube_with_hands.png" width="40%" height="40%"></img>
             <br></br>
@@ -33,7 +33,7 @@ function IntroPage() {
             </div>
 
             <p>
-                <a href="https://drive.google.com/drive/folders/1uB1wxeukfhtGZqeC5HApO5eKB4MJzkHh?usp=sharing"><button class="intro_button">Join the Game<div style={{fontSize: "70%"}}>(Download)</div></button></a>
+                <a href="https://drive.google.com/drive/folders/1SSpNLtq_g2HzAs338mVRDlh6woX_zqV1?usp=sharing"><button class="intro_button">Join the Game<div style={{fontSize: "70%"}}>(Download)</div></button></a>
                 <br></br>
                 <br></br>
             </p>
