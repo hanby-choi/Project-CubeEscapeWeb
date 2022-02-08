@@ -12,7 +12,7 @@ function LeftMenu(props) {
     <Menu.Item key='hint' className='hoverToRed'>
       <a href="/hint" >스테이지소개</a>
     </Menu.Item>
-    <SubMenu title={<a href="/forum" >게시판</a>} className='hoverToRed' >
+    <SubMenu title={<a href="/forum" onClick={(e)=>{e.preventDefault(); }} >게시판</a>} className='hoverToRed' >
         <Menu.Item key="setting:1" ><a href="/forum/free" className='submenu'>자유게시판</a></Menu.Item>
         <Menu.Item key="setting:2"><a href="/forum/playtip"  className='submenu'>공략게시판</a></Menu.Item>
         <Menu.Item key="setting:3" ><a href="/forum/idea" className='submenu'>아이디어게시판</a></Menu.Item>
@@ -21,7 +21,7 @@ function LeftMenu(props) {
       <a href="/review">리뷰</a>
     </Menu.Item>
     <Menu.Item key='report' className='hoverToRed'>
-      <a href="/report">버그 제보</a>
+      <a href="/report">버그제보</a>
     </Menu.Item>
    
   </Menu>

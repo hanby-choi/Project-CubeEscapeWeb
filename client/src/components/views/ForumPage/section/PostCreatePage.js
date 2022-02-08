@@ -7,6 +7,7 @@ import Axios from 'axios';
 function PostCreatePage(props) { // 
   const [title,setTitle] =useState('default title');
   const [content,setContent]=useState('default content');
+  const [nickname,setNickName]=useState('');
   const url = props.match.url;
   const url_token=url.split('/');
    const type = url_token[2] ; // 
@@ -21,7 +22,8 @@ function PostCreatePage(props) { //
            postId : Date.now(), // 글 고유 번호
            title : title,
            content : content,
-           createdAt : Date.now()
+           createdAt : Date.now(),
+           nickname: nickname,
        
        }
        
@@ -41,7 +43,7 @@ function PostCreatePage(props) { //
  
 
     return (
-        <div >
+        <div style={{justifyContent: 'center',display:'flex',flexDirection:'column'}} >
             <Form.Control
           type="text"
           placeholder="글 제목"
@@ -53,6 +55,14 @@ function PostCreatePage(props) { //
           data={content}
           onChange={(event)=>setContent(event.editor.getData())}
         ></CKEditor>
+           <Form.Control
+          type="text"
+          placeholder="글쓴이"
+          value = {nickname}
+          onChange={(event)=>setNickName(event.target.value)}
+          style={{width: '200px'}}
+         
+        />
            <Button onClick={uploadPost} block="true">
           올리기
         </Button>
