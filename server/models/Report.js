@@ -17,6 +17,10 @@ const reportSchema = mongoose.Schema({
         required : true
     },
 
+    files: {
+       type : [mongoose.Schema.Types.Mixed ]
+    },
+
     createdAt:{ // 글을 생성한 날짜 
         type : Date,
         default : Date.now()

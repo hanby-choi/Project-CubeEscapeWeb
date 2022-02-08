@@ -5,37 +5,31 @@ import './ReportPage.css';
 
 function ReportPage() {
 
-    /*
-    state = { selectedFiles: null }
-
-    fileChangedHandler = event => {
-        const files = event.target.files;
-        console.log(files);
-        this.setState({
-        selectedFiles: files
-        });
-    };
-
-    onClickHandler = event => {
-        const formData = new FormData();
-        formData.append(
-          "uploadImages",
-          this.state.selectedFiles,
-          this.state.selectedFiles.name
-        );
-        const config = {
-          headers: {
-            "content-type": "multipart/form-data"
-          }
-        };
-        axios.post(`uploadAPI`, formData, config);
-
-        <input type="file" multiple onChange={this.fileChangedHandler} />
-            <button onClick={this.onClickHandler}>저장하기</button>
-      };*/
-
     const [title,setTitle]=useState('');
     const [content,setContent]=useState('');
+    const [files,setFiles]=useState([]);
+
+    const onLoadFile = (e) => {
+        const file = e.target.files;
+        console.log(file);
+        setFiles(file);
+    }
+
+    const handleClick = (e) => {
+        const formdata = new FormData();
+        for(var i=0; i<files.length; i++){
+            formdata.append('files[]',files[i]);
+        }
+
+        const config = {
+            Headers: {
+                'content-type': 'multipart/form-data',
+            }
+        };
+
+        Axios.post(`files`, formdata, config);
+        
+    }
 
     const createReport =()=>{
       
@@ -43,6 +37,7 @@ function ReportPage() {
             reportId: Date.now(),
             title: title,
             content :content,
+            files : handleClick(),
             createdAt : Date.now()
         }
 
@@ -70,9 +65,9 @@ function ReportPage() {
                 <Input.TextArea autoSize={{ minRows: 5, maxRows: 20 }} name="content" onChange={(event)=>setContent(event.target.value)} style={{color: 'black', fontFamily: 'NotoSerifKR', width: 500, }} placeholder='제보 내용을 입력해주세요'/>
             </label>
             <div className='report_subtitle' style={{paddingRight: '325px'}}>파일 첨부<span style={{fontSize: '50%', paddingLeft: '5px'}}>(스크린샷 등)</span></div>
-            
+            <input type='file' multiple name='files' onChange={onLoadFile} style={{paddingRight: '205px'}} />
 
-            <Button variant="light" onClick={createReport} block="true" style={{color: 'black', width:'100px', marginTop: '20px'}}>제출</Button>
+            <Button variant="light" onClick={createReport} style={{color: 'black', width:'100px', marginTop: '20px'}}>제출</Button>
         </div>
         
     )
