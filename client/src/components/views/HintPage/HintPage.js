@@ -13,7 +13,7 @@ function HintPage() {
     return (
         <div style={{ width : '100%'}}>
         
-               <h1 style={{textAlign:'center',fontFamily:`'Times New Roman', Times, serif`,margin:'100px',paddingBottom:'10px',color:'white', borderBottom: `1px solid gray`}}>공략법/힌트</h1>
+               <h1 style={{textAlign:'center',fontFamily:`'Times New Roman', Times, serif`,margin:'100px',paddingBottom:'10px',color:'white', borderBottom: `1px solid gray`}}>스테이지 소개</h1>
 
             <div style={{ width : '70%', margin: '1rem auto'}}>
           <Row gutter={[24,24]}/*상하좌우 여백주기*/> 

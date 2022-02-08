@@ -4,7 +4,10 @@ import { NavLink } from "react-router-dom";
 import Axios from "axios";
 
 class BoardRow extends Component {
+
+  
   render() {
+    console.log(this.props.type)
     return (
       <tr>
         <td>

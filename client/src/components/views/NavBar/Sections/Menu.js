@@ -10,7 +10,7 @@ function LeftMenu(props) {
       <a href="/intro" >게임소개</a>
     </Menu.Item>
     <Menu.Item key='hint' className='hoverToRed'>
-      <a href="/hint" >공략법/힌트</a>
+      <a href="/hint" >스테이지소개</a>
     </Menu.Item>
     <SubMenu title={<a href="/forum" >게시판</a>} className='hoverToRed' >
         <Menu.Item key="setting:1" ><a href="/forum/free" className='submenu'>자유게시판</a></Menu.Item>

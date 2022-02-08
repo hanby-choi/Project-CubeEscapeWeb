@@ -45,7 +45,11 @@ function App() {
           <Route exact path="/forum/playtip" component={Auth(PlayTipForumPage, true)} />
           <Route exact path="/forum/idea" component={Auth(IdeaForumPage, true)} />
           <Route exact path="/forum/free/create" component={Auth(PostCreatePage, true)} /> 
+          <Route exact path="/forum/idea/create" component={Auth(PostCreatePage, true)} /> 
+          <Route exact path="/forum/playtip/create" component={Auth(PostCreatePage, true)} /> 
           <Route exact path="/forum/free/:postId" component={Auth(PostViewPage, true)} />
+          <Route exact path="/forum/idea/:postId" component={Auth(PostViewPage, true)} />
+          <Route exact path="/forum/playtip/:postId" component={Auth(PostViewPage, true)} />
           <Route exact path="/credit" component={Auth(CreditPage, null)} />
 
         </Switch>
