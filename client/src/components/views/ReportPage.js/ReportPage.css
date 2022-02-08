@@ -1,0 +1,24 @@
+@import '../../App.css';
+
+.report{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "NotoSerifKR";
+    text-align: center;
+}
+
+.report_title {
+    color: white;
+    font-size: 32px;
+    border-bottom: 1px;
+    border: solid;
+    border-color: white;
+}
+
+.report_subtitle {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 150%;
+}

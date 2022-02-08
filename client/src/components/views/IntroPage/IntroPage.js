@@ -8,8 +8,9 @@ function IntroPage() {
             <div style={{position: 'absolute', top: '0px'}}><a name="story"> </a></div>
             <div style={{position: 'absolute', top: '400px'}}><a name="download"> </a></div>
             <div style={{position: 'absolute', top: '650px'}}><a name="system"> </a></div>
-            <div style={{position: 'absolute', top: '1110px'}}><a name="recommend"> </a></div>
-            <div style={{position: 'absolute', top: '3180px'}}><a name="vidio"> </a></div>
+            <div style={{position: 'absolute', top: '1110px'}}><a name="intro"> </a></div>
+            <div style={{position: 'absolute', top: '1820px'}}><a name="recommend"> </a></div>
+            <div style={{position: 'absolute', top: '3770px'}}><a name="vidio"> </a></div>
 
             <img src="/images/cube_with_hands.png" width="40%" height="40%"></img>
             <br></br>
@@ -32,7 +33,7 @@ function IntroPage() {
             </div>
 
             <p>
-                <a href="https://drive.google.com/drive/folders/1uB1wxeukfhtGZqeC5HApO5eKB4MJzkHh?usp=sharing"><button class="intro_button">Join the Game<div style={{fontSize: "70%"}}>(Download)</div></button></a>
+                <a href="https://drive.google.com/drive/folders/1SSpNLtq_g2HzAs338mVRDlh6woX_zqV1?usp=sharing"><button class="intro_button">Join the Game<div style={{fontSize: "70%"}}>(Download)</div></button></a>
                 <br></br>
                 <br></br>
             </p>
@@ -50,6 +51,14 @@ function IntroPage() {
                 <span style={{marginRight: "50px"}}>미스터리 퍼즐 어드벤처</span>
                 <span style={{marginLeft:"30px", marginRight: "85px"}}>스토리</span>
             </div>
+            <br></br>
+            <br></br>
+
+            <div className="intro_title">INTRO</div>
+            <br></br>
+            <iframe width="1008" height="567" src="https://www.youtube.com/embed/iWjtblBltoo" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br></br>
             <br></br>
             
@@ -129,6 +138,7 @@ function IntroPage() {
                         <li><a href="#story">Story</a></li>
                         <li><a href="#download">Download</a></li>
                         <li><a href="#system">System</a></li>
+                        <li><a href="#intro">Intro</a></li>
                         <li><a href="#recommend">Stage Recommendation</a></li>
                         <li><a href="#vidio">Play Video</a></li>
                     </ul>

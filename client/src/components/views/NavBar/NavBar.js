@@ -27,14 +27,14 @@ function NavBar() {
       <span className="menu_left">
           <Menu mode="horizontal" />
         </span>
+
         
         <a  href="https://drive.google.com/drive/folders/1uB1wxeukfhtGZqeC5HApO5eKB4MJzkHh?usp=sharing"><Button id="btn" style={{marginTop:'15px', backgroundColor:'black', color:'white'}}>Get Started</Button></a>
+
 
         <span className="menu_right">
           <LoginMenu mode="horizontal" />
         </span>
-        
-          
     
         
       </div>
