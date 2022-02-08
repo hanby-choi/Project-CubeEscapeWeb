@@ -55,72 +55,72 @@ function IntroPage() {
             
             <div className="intro_title">STAGE RECOMMENDATION</div>
             <div className="intro_body">
-                <p>
+                <div>
                     1. 스토리를 중요하게 생각하시는 분
                     <div style={{textAlign: "center", paddingTop: "10px"}}>
-                    <img src={stageImage.stage1TextImage} style={{width: "25%", height: "25%"}}></img>
-                    <img src={stageImage.stage8TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}}></img>
+                    <img src={stageImage.stage1TextImage} style={{width: "25%", height: "25%"}} alt="stage"></img>
+                    <img src={stageImage.stage8TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}} alt="stage"></img>
                     </div>
 
-                </p>
-                <p>
+                </div>
+                <div>
                     2. 컨트롤에 자신 있으신 분
                     <div style={{textAlign: "center", paddingTop: "10px"}}>
-                    <img src={stageImage.stage7TextImage} style={{width: "25%", height: "25%"}}></img>
-                    <img src={stageImage.stage11TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}}></img>
+                    <img src={stageImage.stage7TextImage} style={{width: "25%", height: "25%"}} alt="stage"></img>
+                    <img src={stageImage.stage11TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}} alt="stage"></img>
                     </div>
 
-                </p>
-                <p>
+                </div>
+                <div>
                     3. 논리적이고 감각적인 분, 수수께끼에 자신 있으신 분
                     <div style={{textAlign: "center", paddingTop: "10px"}}>
-                    <img src={stageImage.stage2TextImage} style={{width: "25%", height: "25%"}}></img>
-                    <img src={stageImage.stage4TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}}></img>
-                    <img src={stageImage.stage12TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}}></img>
+                    <img src={stageImage.stage2TextImage} style={{width: "25%", height: "25%"}} alt="stage"></img>
+                    <img src={stageImage.stage4TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}} alt="stage"></img>
+                    <img src={stageImage.stage12TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}} alt="stage"></img>
                     </div>
 
-                </p>
-                <p>
+                </div>
+                <div>
                     4. 풍광을 중요하게 생각하시는 분
-                    <div style={{textAlign: "center", paddingTop: "10px"}}>
-                    <img src={stageImage.stage5TextImage} style={{width: "25%", height: "25%"}}></img>
+                    <div style={{textAlign: "center", paddingTop: "10px"}} alt="stage">
+                    <img src={stageImage.stage5TextImage} style={{width: "25%", height: "25%"}} alt="stage"></img>
                     </div>
 
-                </p>
-                <p>
+                </div>
+                <div>
                     5. 공포와 마주하고 싶으신 분
-                    <div style={{textAlign: "center", paddingTop: "10px"}}>
-                    <img src={stageImage.stage6TextImage} style={{width: "25%", height: "25%"}}></img>
-                    <img src={stageImage.stage13TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}}></img>
+                    <div style={{textAlign: "center", paddingTop: "10px"}} alt="stage">
+                    <img src={stageImage.stage6TextImage} style={{width: "25%", height: "25%"}} alt="stage"></img>
+                    <img src={stageImage.stage13TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}} alt="stage"></img>
                     </div>
 
-                </p>
-                <p>
+                </div>
+                <div>
                     6. 새로움을 느끼고 싶으신 분
-                    <div style={{textAlign: "center", paddingTop: "10px"}}>
-                    <img src={stageImage.stage3TextImage} style={{width: "25%", height: "25%"}}></img>
-                    <img src={stageImage.stage9TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}}></img>
+                    <div style={{textAlign: "center", paddingTop: "10px"}} alt="stage">
+                    <img src={stageImage.stage3TextImage} style={{width: "25%", height: "25%"}} alt="stage"></img>
+                    <img src={stageImage.stage9TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}} alt="stage"></img>
                     </div>
 
-                </p>
-                <p>
+                </div>
+                <div>
                     7. 운을 시험해보고 싶으신 분
-                    <div style={{textAlign: "center", paddingTop: "10px"}}>
-                    <img src={stageImage.stage10TextImage} style={{width: "25%", height: "25%"}}></img>
+                    <div style={{textAlign: "center", paddingTop: "10px"}} alt="stage">
+                    <img src={stageImage.stage10TextImage} style={{width: "25%", height: "25%"}} alt="stage"></img>
                     </div>
 
-                </p>
+                </div>
 
             </div>
             <br></br>
             <br></br>
 
 
-            <div className="intro_title">PLAY VIDIO</div>
+            <div className="intro_title">PLAY VIDEO</div>
             <br></br>
             <iframe width="1008" height="567" src="https://www.youtube.com/embed/XaHfOkf_mpI" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             <br></br>
             
             <div className="intro_nav">
@@ -130,7 +130,7 @@ function IntroPage() {
                         <li><a href="#download">Download</a></li>
                         <li><a href="#system">System</a></li>
                         <li><a href="#recommend">Stage Recommendation</a></li>
-                        <li><a href="#vidio">Play Vidio</a></li>
+                        <li><a href="#vidio">Play Video</a></li>
                     </ul>
                 </nav>
             </div>

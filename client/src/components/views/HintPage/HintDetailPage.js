@@ -15,12 +15,14 @@ function HintDetailPage(props) {
         const container=[]
         
         for(var i=0;i<hintQuestion.length;i++){
-            container.push( <div>
+            container.push( <div key={i}>
                 <details >
-                    <summary >STEP{i+1}.{hintQuestion[i]}</summary>
+                    <summary >STEP{i+1}. {hintQuestion[i]}</summary>
                     <span >{hintAnswer[i]}</span>
                 </details>
+                <br/>
                 </div>
+              
             )
            
         }
@@ -38,13 +40,16 @@ function HintDetailPage(props) {
     return (
         <div>
             <MainImage image={stageInfo[stageId-1].stageImage} stageId={stageId} stageName={stageInfo[stageId-1].stageName} stageText={stageInfo[stageId-1].stageText}></MainImage>
-            <div style={{width:'70%', fontSize:'1rem', padding:'20px'}}>
-                <h3 style={{color:'white', fontFamily:'휴먼 아미체'}}>Difficulty</h3> 
+            <div style={{width:'70%', fontSize:'1rem', padding:'20px',fontFamily:'NotoSerifKR'}}>
+                <h3 style={{color:'white'}}>Difficulty</h3> 
                 <div style={{marginBottom:'10px'}}>{getDifficulty()}</div>
-                <h3 style={{color:'white', fontFamily:'휴먼 아미체'}}>Hints</h3>
+                <br/>
+                <h3 style={{color:'white'}}>Hints</h3>
                 <div>{getHintContainer()}</div>
+                <br/>
                 <h3 style={{color:'white', fontFamily:'NotoSerifKR', paddingTop: '10px'}}>Credit</h3>
                 <Credit creditTitle={StageCredit[stageId-1].creditTitle} creditBody={StageCredit[stageId-1].creditBody}></Credit>
+
             </div>
         </div>
     )
