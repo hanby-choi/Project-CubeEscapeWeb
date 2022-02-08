@@ -22,10 +22,10 @@ function LoginMenu(props) {
   if (user.userData && !user.userData.isAuth) {
     return (
       <Menu mode={props.mode} style={{backgroundColor:'black'}}>
-        <Menu.Item key="mail">
+        <Menu.Item key="mail" className='hoverToRed'>
           <a href="/login">로그인</a>
         </Menu.Item>
-        <Menu.Item key="app">
+        <Menu.Item key="app" className='hoverToRed'>
           <a href="/register">회원가입</a>
         </Menu.Item>
       </Menu>
@@ -33,8 +33,8 @@ function LoginMenu(props) {
   } else {
     return (
       <Menu mode={props.mode} style={{backgroundColor:'black'}}>
-        <Menu.Item key="logout">
-          <a onClick={logoutHandler}>Logout</a>
+        <Menu.Item key="logout" className='hoverToRed' >
+          <a onClick={logoutHandler} id='logout'>로그아웃</a>
         </Menu.Item>
       </Menu>
     )

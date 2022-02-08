@@ -17,16 +17,18 @@ function NavBar() {
   };
 
   return (
+    
     <nav className="menu" style={{ position: 'fixed', zIndex: 5, width: '100%', backgroundColor:'black' }}>
       <div className="menu__logo">
-        <a href="/">CUBE ESCAPE</a>
+    
+        <a href="/">Cube escape</a>
       </div>
       <div className="menu__container">
       <span className="menu_left">
           <Menu mode="horizontal" />
         </span>
   
-        <a href="" download><Button id="btn" style={{marginTop:'15px', backgroundColor:'black', color:'white', fontFamily: 'Oranienbaum'}}>Get Started</Button></a>
+        <a href="" download><Button id="btn" style={{marginTop:'15px', backgroundColor:'black', color:'white',float:'right'}}>Get Started</Button></a>
         <span className="menu_right">
           <LoginMenu mode="horizontal" />
         </span>
