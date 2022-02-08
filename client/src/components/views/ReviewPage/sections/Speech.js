@@ -14,11 +14,11 @@ function Speech({data,idx}) {
      imgSrc = speech.right;
     }
    
-  return <div style={{color:'black',fontFamily:'휴먼아미체',margin:'10px', backgroundColor:'white',width:'800px',height:'275px',background: `url(${imgSrc})`}}>
+  return <div style={{color:'black',fontFamily: "NotoSerifKR",margin:'10px', backgroundColor:'white',width:'800px',height:'275px',background: `url(${imgSrc})`}}>
 
       
-      <h1 style={{margin:'40px',textAlign:'center'}}>{content}</h1>
-      <div style={{float:'right',marginRight:'50px',fontSize:'50px'}}>
+      <h2 style={{margin:'40px',textAlign:'center'}}>{content}</h2>
+      <div style={{float:'right',marginRight:'50px',fontSize:'30px'}}>
 
       <Rating readonly={true}  ratingValue={ratings}/> <span>{writer}</span>
       </div>
