@@ -5,6 +5,7 @@ function CreditPage() {
     return (
         <div className="credit">
             <div className="credit_title">CREDIT</div>
+            <div className="credit_title" style={{fontSize: '150%', paddingTop: '20px'}}>CUBE ESCAPE GAME</div>
             <div className="credit_container">
                 <div className="credit_subtitle"> 
                     MAIN GAME DESIGN<br></br>
@@ -24,18 +25,29 @@ function CreditPage() {
             <div className="credit_title" style={{fontSize: '150%', paddingTop: '30px'}}>CUBE ESCAPE WEB</div>
             <div className="credit_container">
                 <div className="credit_subtitle"> 
-                    MAIN GAME DESIGN<br></br>
-                    SUB GAME DESIGN<br></br>
-                    PROGRAMMING<br></br>
-                    ART<br></br>
-                    PROJECT MANAGER
+                    WEB DESIGN<br></br>
+                    WEB FRONT-END<br></br>
+                    WEB BACK-END<br></br>
+                    ART
                 </div>
-                <div className="credit_body">
-                    김서연<br></br>
-                    김지연 이선의 최한비 황주이<br></br>
-                    김서연 김지연 이선의 최한비 황주이<br></br>
-                    김서연<br></br>
-                    김서연
+                <div className="credit_body" style={{paddingRight: '185px'}}>
+                    김서연 최한비<br></br>
+                    김서연 최한비<br></br>
+                    김서연 최한비<br></br>
+                    최한비
+                </div>
+            </div>
+            <div className="credit_title" style={{fontSize: '150%', paddingTop: '30px'}}>GITHUB</div>
+            <div className="credit_container">
+                <div className='credit_body'>
+                <div>
+                    <img src="/images/github_icon.png" width="25" height="25" style={{marginRight: "10px"}}></img>
+                    <a href="https://github.com/Cube-escape/CubeEscape">Cube-escape/CubeEscape</a>
+                </div>
+                <div>
+                    <img src="/images/github_icon.png" width="25" height="25" style={{marginRight: "10px"}}></img>
+                    <a href="https://github.com/Cube-escape/Web_CubeEscape">Cube-escape/Web_CubeEscape</a>
+                </div>
                 </div>
             </div>
             <div className="credit_title" style={{fontSize: '150%', paddingTop: '30px'}}>WEB ICON</div>
