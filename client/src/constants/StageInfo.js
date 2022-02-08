@@ -11,21 +11,36 @@ const stageInfo=[
     ,`좁아지는 공간속에서 제한시간내에 상자에 있는 자물쇠를 해제하고 열쇠를 꺼내지 못하면 게임오버에 이르게 된다. 상자 비밀번호에 관한 힌트가 적혀있는 쪽지를 살펴보자. 쪽지에서는 큐브에 몇개의 공간이 있냐고 물어보고 있다. 포스터를 통해 큐브 공간의 크기(정사각형 개수)를 확인한 후 그것을 세자리로 입력하여 열쇠를 획득한다. `
     ,"획득한 열쇠를 문과 상호작용시킨다. 이때 페이드 아웃효과가 적용되어 바로 다음 스테이지로 이동되는 것이 아니라 시간이 조금 걸림에 유의하도록 하자. "]},
     stageImage:stageImage.stage1Image,difficulty:3,recommendTo:''},
-    {stageId:2,stageName:'The White Gallery',stageText:'죽을뻔한 위기에서 벗어나 도착한 다음 공간은 어딘가 사방이 온통 하얀 흰색 갤러리. ',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage2Image,difficulty:5},
-    {stageId:3,stageName:'The Christmas',stageText:'stage Introduction',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage3Image,difficulty:4},
+    {stageId:2,stageName:'The White Gallery',stageText:'죽을뻔한 위기에서 겨우 벗어나 도착한 다음 공간은 사방이 온통 하얀 흰색 갤러리. 정체모를 스산하고 기괴한 그림들만이 나를 응시하고 있을뿐이었다. "혹시 알아? 너도 이 갤러리에 갇혀 영영 작품으로 실리게 될지 말이야." '
+    ,hint:{question :['이름표 맞추기','영어 키패드 맞추기','탈출구 옆 숫자 키패드 비밀번호 입력하기'] ,answer:["그림에 어울리지 않는 이름표가 붙어있진 않은가? 그림과 그 그림에 걸맞는 이름표가 잘 어우러지도록 그림 - 이름표를 짝지어 보자.  ","갤러리 정 중앙에 위치한 큐브 그림에 빨간색 조명을 켜보자. 특정 글씨가 빨갛게 변하고 있진 않은가? 빨간색으로 표시된 글자들을 해당 큐브그림의 작품명과 연관지어 영어 키패드 비밀번호를 해결해보자.","갤러리가 어두워 지면 그림들에 숨겨져있던 문제들이 하나씩 나타나기 시작한다. 그 그림에 나타난 문제들을 하나씩 해결하여 순서에 맞게 키패드에 입력하자. 비밀번호는 총 4자리이며, 문제를 풀어 획득한 숫자의 순서는 그림 맨 왼쪽 상단의 문양과 관련이 있다."]},stageImage:stageImage.stage2Image,difficulty:5},
+    {stageId:3,stageName:'The Christmas',stageText:`겉으로는 따뜻하고 단란한 크리스마스를 보이고 있는 것 같은 어떤 한 집안의거실. MERRY CHRISTMAS 라고 적혀진 가랜드와 풍선, 트리와 선물, 케이크, 곰인형 까지 뭐하나 부족할 것이 없어 보인다.
+    그리고 그곳에 숨겨진 엄청난 비밀? 플레이어는 소녀의 일기장(스케치북)을 탐색하며 사실 이곳은 모두 어릴 적 부모를 잃은 한 어린아이의 허상이었다는 것을 깨닫게 되는데..
+    `,hint:{question :['소녀의 비밀상자 해제하기','벽난로에 물건 태우기'] ,answer:["소녀가 적은 일기장을 자세히 살펴보면 소녀가 비밀상자의 비밀번호를 자신의 생일로 설정해두었다는 것을 확인할 수 있다. 방 어딘가에 소녀의 생일을 알 수 있는 단서를 찾아 상자 비밀번호로 입력해보자","곰인형, 가족사진, 크리스마스 선물, 장식, 시계 등 상호작용이 가능한 여러 물건들을 소녀에게 건네보자. 뭔가 특별한 반응(대사)을 보이는 사물들이 존재한다. 활활 타오르는 불(벽난로)에  소녀가 부정적인 반응을 보인 것들을 넣어 태우면 소녀가 사라지며 열쇠를 얻을 수 있다. 끔찍한 기억에 묶여 죽었는데도 사라지지 못하는 소녀가 없어지는 것이다. 이때 잘못된 물건을 태우면 게임이 오버됨에 유의하자."]},stageImage:stageImage.stage3Image,difficulty:4},
     {stageId:4,stageName:'The Liar',stageText:`피노키오들은 자신들을 만들어준 제페토 할아버지를 죽입니다. 
     그리고 그 방에 들어간 사람들은 다들 피노키오들의 새 주인이 되고 아무도 살아남지 못했습니다.
     피노키오들은 거짓말을 아주 잘하고 플레이어는 그 거짓말을 분별해야합니다.
-    “진실을 찾지 못하는자에게는 오직 죽음뿐”`,hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage4Image,difficulty:4},
-    {stageId:5,stageName:'The River Of Oblivion',stageText:'stage Introduction',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage5Image,difficulty:5},
-    {stageId:6,stageName:'The Nightmare',stageText:'stage Introduction',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage6Image,difficulty:4},
-    {stageId:7,stageName:'The Reverse',stageText:'모든것이 거꾸로인 공간 “발을 조금이라도 잘못딛는 순간 넌 끝없는 나락속으로 떨어지고 말걸”',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage7Image,difficulty:3},
-    {stageId:8,stageName:'The Unconcious',stageText:'관리인 C의 무의식의 세계. 도대체 그에겐 무슨일이 있었던 걸까.',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage8Image,difficulty:1},
-    {stageId:9,stageName:'The Game',stageText:'stage Introduction',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage9Image,difficulty:5},
-    {stageId:10,stageName:'The Fate',stageText:'stage Introduction',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage10Image,difficulty:1},
-    {stageId:11,stageName:'The Maze',stageText:'stage Introduction',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage11Image,difficulty:2},
-    {stageId:12,stageName:'The Weight Of Vice',stageText:'stage Introduction',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage12Image,difficulty:5},
-    {stageId:13,stageName:'The Unknown',stageText:'stage Introduction',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage13Image,difficulty:3}
+    “진실을 찾지 못하는자에게는 오직 죽음뿐”`,hint:{question :['키패드 비밀번호 풀기','고래자물쇠해결하기','Q3'] ,answer:["책장을 흔들면","hint2","hint3"]},stageImage:stageImage.stage4Image,difficulty:4},
+    {stageId:5,stageName:'The River Of Oblivion',stageText:`망각의 강. 죽은자들이 모든것을 잊고 처음으로 돌아갈때 건너게 된다는 강. 
+    끝없이 펼쳐진 물과 자욱한 안개. 관리인 c는 죄를 짓는 사람들을 증오하고 미워하며 망각의 강에 사람들을 가둔다. 
+    관리인 c는 이런 레테의 강의 기억 망각과 다시 이생을 살게 되는 여러 죄를 짓는 인간들에 
+    증오심을 가지고 있고 그들이 기억을 잃고 다시 이생을 살게 된다고 해도 
+    그들의 악하고 천한 본성은 없어지지 않고 그들은 속죄는커녕 다시 더러운 죄를 짓게 될 것이라고 생각한다. 
+    그래서 관리인 c는 죄인들을 기억 망각의 강에 가두고 끝도 없이 강을 건너게 하며 
+    자신이 다른 사람들에게 저질렀던 추악한 죄를 레테의 강에서의 공포와 추악함을 통해 
+    영원히 느끼기를 바라고 사람들을 가둔다. “아무리 배를 타고 움직여봐도 결국 제자리야.”`,hint:{question :['비밀공간 입성해서 벽화보기','뱃사공에게 뱃삯을 건네기.','뱃사공(노인)의 기억 되찾기','배를타고 목적지로 이동하기'] ,answer:['철문을 열고 들어가면 좌측에 비밀공간으로 안내하는 미닫이 문이 존재한다. 벽화를 보기 위해서는 우선 비밀공간 네 모서리에 위치한 꺼져있는 불을 켜야한다. 불을 켜기 위해서는 불을 붙인 등불이 필요하다. ',"배를 타기 위해서는 노인에게 뱃삯을 지불해야한다. 뱃삯은 망각의 섬 내부에 위치한 비밀공간 내부의 벽화를 보고 나면 동전이 떨어진다. 그 동전을 주워 뱃사공에게 전달하자. ","뱃사공에게 뱃삭은 지불했지만 망각의 섬에서 배를 움직이는 방법을 잊어먹은 상태이다. 따라서 '기억' 이라는 꽃말을 지닌 꽃을 건네주어 뱃사공의 기억을 되찾아주자. 그럼 드디어 배를 탈 수 있다.","배를 탔다면 배에 실린 지도를 확인하자. 나의 현재위치와 지도를 대조시켜 지도에 X 표시가 존재하는 곳으로 이동해보자. 이 때 망각의 강 곳곳에 플레이어를 잡아두려는 혼령들이 돌아다니고 있음에 유의하자. 그 혼령들과 접촉하게 되면 다시 시작지점으로 돌아오게 된다."]},stageImage:stageImage.stage5Image,difficulty:5},
+    {stageId:6,stageName:'The Nightmare',stageText:`내가 꾸는 악몽이 현실로 실현되었다?
+    “내가 만들어놓은 함정들을 이리저리 잘도 빠져나오는군.
+     이번에는 네 머릿속에서 가져와 봤어. 어쩌면 네가 가장 무서워하는 것? 
+     이번에도 한번 탈출해 보라고.”
+    `,hint:{question :['드림캐쳐 조합도 확인하고 눈알 찾아서 조합대위에 올려놓기','깃털 구하기','드림캐쳐 완성하기'] ,answer:["유리 전시대 안에서 도안의 색상과 동일한 눈알을 찾아 책상으로 가져온다."
+    ,"먼저 서랍에 위치한 새장 열쇠를 찾는다. 새장을 열어 새를 꺼내고, 깃털을 두장 뽑아서 조합대에 넣는다.","재료를 다 모으면 드림캐쳐가 만들어진다. 만들어진 드림캐쳐를 방에 걸면 악몽에서 깨어날 수 있다. 압정이나 못이 벽에 미리 박혀있는 곳을 찾아 걸어야 한다."]},stageImage:stageImage.stage6Image,difficulty:4},
+    {stageId:7,stageName:'The Reverse',stageText:'모든것이 거꾸로인 공간 “발을 조금이라도 잘못딛는 순간 넌 끝없는 나락속으로 떨어지고 말걸”',hint:{question :['키패드 해제하기'] ,answer:["맵 반댓편까지 이동하면서 관측한 네개의 숫자들을 토대로 비밀번호를 입력한다. 이때 이 방은 모든것이 거꾸로 된 공간임에 유의한다. "]},stageImage:stageImage.stage7Image,difficulty:3},
+    {stageId:8,stageName:'The Unconcious',stageText:`관리인 C의 무의식의 세계. 우리의 의식은 항상 어떤 무엇을 향해 관계를 맺고 있기 때문에 대상 역시 의식을 매개로 하지 않고서는 대상으로 다룰 수 없다.무의식을 의식화하지 않는다면 무의식이 삶의 방향을 결정하게 된다. 우리는 그런 것을 두고, 바로 '운명'이라고 부른다.`,hint:{question :['진실의 문 찾기'] ,answer:["관리인 C의 기억(무의식)과 관련된 사물에 관한 기억들을 모두 보고나면 자동적으로 가짜문들이 사라지고 진짜 문만 남는다. 그 문을 통해 다음 스테이지로 이동할 수 있다."]},stageImage:stageImage.stage8Image,difficulty:1},
+    {stageId:9,stageName:`The Game`,stageText:'애초부터 공정하지 못한게임. 자신이 질 수 밖에 없었던 게임. 관리인 C는 플레이어를 게임속으로 초대한다.  “나는 인생에서 최악의 패를 가지고 시작했어. 너도 한번 내가 겪은 고통을 느껴봐 ',hint:{question :['Q1','Q2','Q3'] ,answer:["hint1","hint2","hint3"]},stageImage:stageImage.stage9Image,difficulty:5},
+    {stageId:10,stageName:'The Fate',stageText:'운명의 방. 커다란 테이블과 그 위에 올려진 수정구슬. 타로 점집처럼 신비롭고 묘한분위기가 난다.  “ 죽음을 운명에 맡겨보는것도 나쁘지 않은 선택이지. 이곳에서 너의 운명을 시험해보지 않겠어? ”',hint:{question :['카드뽑기','다트핀찾기','주사위 굴리기'] ,answer:["총 10장의 카드 중에서 행운을 암시하는 4장의 카드(클로버 퀸:믿음,클로버 킹:친절,하트10:행운,하트 퀸:도움) 중 한장을 뽑으면 된다.","맵속 구석구석에 숨겨진 다트핀을 모두 찾는다.","주사위를 굴렸을때, 벽에 뜬 숫자의 약수가 나오도록한다면 주어진 공간을 통과할 수 있다. "]},stageImage:stageImage.stage10Image,difficulty:1},
+    {stageId:11,stageName:'The Maze',stageText:'이번에 도착한곳은 미궁? 근데 보통 미궁은 아닌것 같다.  “ 특별히 호락호락하지 않은 미로로 준비해봤어. 내가 준비한 선물들을 재밌게 즐기길 바라.  ”',hint:{question :['잠겨있는 문 열기'] ,answer:["미로를 최종적으로 통과하기 위해서는 열쇠가 필요하다. 미로 어딘가에 존재하는 상자속에 숨겨져있는 열쇠를 찾아 문을 열도록 하자."]},stageImage:stageImage.stage11Image,difficulty:2},
+    {stageId:12,stageName:'The Weight Of Vice',stageText:'가톨릭의 7가지 대죄와 그 죄의 무게 “너가 지은 죄의 무게를 알라 .뉘우치지 못한자 이곳에서 영영 갇힐지어다.”',hint:{question :['비밀번호 해제하기'] ,answer:[" 각각의 사물들은 특정 죗목(도박,살인,협박)을 지칭한다. 비밀 번호를 해제하기 위해서는 벽보에 A B C D 라고 적힌 곳에 들어갈 숫자를 찾아야한다. 저울과 금돈,은냥을 통해 각각의 죄에 해당하는 무게를 측정할 수 있다. 절도 = 도박 + 폭행 과 같으며, 사기=절도+도박 과 같다."]},stageImage:stageImage.stage12Image,difficulty:5},
+    {stageId:13,stageName:'The Unknown',stageText:'빛한줄기 없는 미지의세계.  “한발 한발 딛을때마다 숨이 조여오는 공포를 느껴봐” ',hint:{question :['문양 맞추기','나비를 따라가기','빛의 잠금장치 해제하기'] ,answer:["정 가운데 바위 위에는 기괴한 문양이 보인다. 현재 바위 위에 보이는 문양과 일치하는 문양을 맵 곳곳에서 찾아서 클릭해준다(4회)","마지막 문양까지 옳게 찾으면 바위가 땅으로 꺼지면서 파란 나비가 솟아오른다. 천천히 그 나비를 끝까지 따라가면 나비가 특정공간을 빙글빙글 멤돈다.","나비가 빙글빙글 멤도는 공간의 중앙을 살펴보면 빛의 잠금장치 해제법이 나와있다. 먼저 나비를 우클릭해 빛의 꽃가루를 채집해야한다. 그리고 채집한 꽃가루를 맵 정 중앙 (처음 리스폰된 장소)으로 가져가 조명에 넣어주면 조명이 활성화된다. 모든 조명(5개)에 불이 들어오면 빛의 잠금장치가 활성화되어 맵이 밝아진다. 이때 다음 스테이지로 잇는 차원의 균열이 등장하게 되고 이를 통해 다음 스테이지로 이동할 수 있다."]},stageImage:stageImage.stage13Image,difficulty:3}
 ]
 
 export default stageInfo;

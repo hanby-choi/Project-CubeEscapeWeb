@@ -53,9 +53,9 @@ function ReviewPage() {
     }
     return (
  
-        <div style={{ display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
+        <div style={{ display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',fontFamily: "NotoSerifKR"}}>
             
-            <h1 style={{color:'white',fontFamily:'Times New Roman',borderBottom:`1px solid white`,margin:'30px'}}>Best Reviews</h1>
+            <h1 style={{color:'white',borderBottom:`1px solid white`,margin:'30px'}}>Best Reviews</h1>
             {reviewList.map((review,idx)=>{
                 return (
                     <Speech data={review} key={review._id} idx={idx}/>

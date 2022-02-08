@@ -27,7 +27,11 @@ const boardSchema = mongoose.Schema({
    createdAt:{ // 글을 생성한 날짜 
        type : Date,
        default : Date.now()
-   }
+   },
+   nickname:{ // 닉네임
+    type : String,
+    default : 'unknown'
+    }
 },{timestamps:true})
 
 

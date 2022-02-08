@@ -59,7 +59,7 @@ class BoardForm extends Component {
             postId={item.postId}
             createdAt={item.createdAt}
             title={item.title}
-            writer={item.writer}
+            writer={item.nickname}
             type={item.type}
           /> ));
           this.setState({
