@@ -33,7 +33,7 @@ function IntroPage() {
             </div>
 
             <p>
-                <a href="https://drive.google.com/drive/folders/1SSpNLtq_g2HzAs338mVRDlh6woX_zqV1?usp=sharing"><button class="intro_button">Join the Game<div style={{fontSize: "70%"}}>(Download)</div></button></a>
+                <a href="https://drive.google.com/drive/folders/1SSpNLtq_g2HzAs338mVRDlh6woX_zqV1?usp=sharing"><button className="intro_button">Join the Game<div style={{fontSize: "70%"}}>(Download)</div></button></a>
                 <br></br>
                 <br></br>
             </p>
@@ -57,8 +57,8 @@ function IntroPage() {
             <div className="intro_title">INTRO</div>
             <br></br>
             <iframe width="1008" height="567" src="https://www.youtube.com/embed/iWjtblBltoo" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             <br></br>
             <br></br>
             
