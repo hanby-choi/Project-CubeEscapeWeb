@@ -33,7 +33,7 @@ function IntroPage() {
             </div>
 
             <p>
-                <a href="https://drive.google.com/drive/folders/1SSpNLtq_g2HzAs338mVRDlh6woX_zqV1?usp=sharing"><button class="intro_button">Join the Game<div style={{fontSize: "70%"}}>(Download)</div></button></a>
+                <a href="https://drive.google.com/drive/folders/1SSpNLtq_g2HzAs338mVRDlh6woX_zqV1?usp=sharing"><button className="intro_button">Join the Game<div style={{fontSize: "70%"}}>(Download)</div></button></a>
                 <br></br>
                 <br></br>
             </p>
@@ -57,72 +57,56 @@ function IntroPage() {
             <div className="intro_title">INTRO</div>
             <br></br>
             <iframe width="1008" height="567" src="https://www.youtube.com/embed/iWjtblBltoo" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             <br></br>
             <br></br>
             
             <div className="intro_title">STAGE RECOMMENDATION</div>
-            <div className="intro_body">
-                <div>
-                    1. 스토리를 중요하게 생각하시는 분
-                    <div style={{textAlign: "center", paddingTop: "10px"}}>
+            <div className="intro_body" style={{textAlign: "center", paddingTop: "10px",fontSize:'10px',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
+
+            
+                   <h6 style={{color:'white',marginTop:'20px'}}> 1. Someone who values the story.</h6>
+                  
                     <img src={stageImage.stage1TextImage} style={{width: "25%", height: "25%"}} alt="stage"></img>
                     <img src={stageImage.stage8TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}} alt="stage"></img>
-                    </div>
+                    
 
-                </div>
-                <div>
-                    2. 컨트롤에 자신 있으신 분
-                    <div style={{textAlign: "center", paddingTop: "10px"}}>
+                    <h6 style={{color:'white',marginTop:'20px'}}>2. those who are confident in Control</h6>
+                    
                     <img src={stageImage.stage7TextImage} style={{width: "25%", height: "25%"}} alt="stage"></img>
                     <img src={stageImage.stage11TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}} alt="stage"></img>
-                    </div>
-
-                </div>
-                <div>
-                    3. 논리적이고 감각적인 분, 수수께끼에 자신 있으신 분
-                    <div style={{textAlign: "center", paddingTop: "10px"}}>
+             
+                    <h6 style={{color:'white',marginTop:'20px'}}>3. Those who are logical, sensible, quick-witted</h6>
+                  
                     <img src={stageImage.stage2TextImage} style={{width: "25%", height: "25%"}} alt="stage"></img>
                     <img src={stageImage.stage4TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}} alt="stage"></img>
                     <img src={stageImage.stage12TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}} alt="stage"></img>
-                    </div>
+              
 
-                </div>
-                <div>
-                    4. 풍광을 중요하게 생각하시는 분
-                    <div style={{textAlign: "center", paddingTop: "10px"}} alt="stage">
+                    <h6 style={{color:'white',marginTop:'20px'}}>4. those who values the scenery</h6>
+              
                     <img src={stageImage.stage5TextImage} style={{width: "25%", height: "25%"}} alt="stage"></img>
-                    </div>
+                 
 
-                </div>
-                <div>
-                    5. 공포와 마주하고 싶으신 분
-                    <div style={{textAlign: "center", paddingTop: "10px"}} alt="stage">
+                    <h6 style={{color:'white',marginTop:'20px'}}> 5. Someone who wants to feel fear</h6>
+                   
                     <img src={stageImage.stage6TextImage} style={{width: "25%", height: "25%"}} alt="stage"></img>
                     <img src={stageImage.stage13TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}} alt="stage"></img>
-                    </div>
-
-                </div>
-                <div>
-                    6. 새로움을 느끼고 싶으신 분
-                    <div style={{textAlign: "center", paddingTop: "10px"}} alt="stage">
+         
+                    <h6 style={{color:'white',marginTop:'20px'}}>6. Someone who wants to feel novelty. </h6>
+                   
                     <img src={stageImage.stage3TextImage} style={{width: "25%", height: "25%"}} alt="stage"></img>
                     <img src={stageImage.stage9TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}} alt="stage"></img>
-                    </div>
+                    
 
-                </div>
-                <div>
-                    7. 운을 시험해보고 싶으신 분
-                    <div style={{textAlign: "center", paddingTop: "10px"}} alt="stage">
+                    <h6 style={{color:'white',marginTop:'20px'}}>7. Those who wants test Luck </h6>
+                 
                     <img src={stageImage.stage10TextImage} style={{width: "25%", height: "25%"}} alt="stage"></img>
-                    </div>
-
-                </div>
-
+          
             </div>
-            <br></br>
-            <br></br>
+            <br/>
+            <br/>
 
 
             <div className="intro_title">PLAY VIDEO</div>
