@@ -4,7 +4,7 @@ module.exports = function (app) {
     app.use(
         '/api',
         createProxyMiddleware({
-            target: 'http://cube-escape.herokuapp.com/server/',
+            target: 'http://cube-escape.herokuapp.com',
             changeOrigin: true,
         })
     );
