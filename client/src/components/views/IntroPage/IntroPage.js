@@ -72,7 +72,7 @@ function IntroPage() {
                     <img src={stageImage.stage8TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}} alt="stage"></img>
                     
 
-                    <h6 style={{color:'white',marginTop:'20px'}}>2. those who are confident in Control</h6>
+                    <h6 style={{color:'white',marginTop:'20px'}}>2. Those who are confident in Control</h6>
                     
                     <img src={stageImage.stage7TextImage} style={{width: "25%", height: "25%"}} alt="stage"></img>
                     <img src={stageImage.stage11TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}} alt="stage"></img>
@@ -84,7 +84,7 @@ function IntroPage() {
                     <img src={stageImage.stage12TextImage} style={{width: "25%", height: "25%", marginLeft: "30px"}} alt="stage"></img>
               
 
-                    <h6 style={{color:'white',marginTop:'20px'}}>4. those who values the scenery</h6>
+                    <h6 style={{color:'white',marginTop:'20px'}}>4. Those who values the scenery</h6>
               
                     <img src={stageImage.stage5TextImage} style={{width: "25%", height: "25%"}} alt="stage"></img>
                  
