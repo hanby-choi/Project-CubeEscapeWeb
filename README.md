@@ -3,6 +3,7 @@
 큐브이스케이프 (CubeEscape) 배포용 웹페이지 제작 프로젝트
 ```
 # Web Page Link: https://cube-escape-web.herokuapp.com/
+
 <br>
  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>
 
@@ -44,7 +45,8 @@ This section should list any major frameworks that you built your project using.
 
 ### development tools
  <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white"/>
-  `Notion Home` :  https://www.notion.so/8cd29a83b76848238a5d0edccfbbaecc
+ 
+  [Notion Home] (https://www.notion.so/8cd29a83b76848238a5d0edccfbbaecc)
 
 
 <!-- GETTING STARTED -->
@@ -57,7 +59,7 @@ To get a local copy up and running follow these simple example steps.
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
-* 
+
 ```sh
 npm install 
 cd client 
