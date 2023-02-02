@@ -2,7 +2,7 @@
 ```
 큐브이스케이프 (CubeEscape) 배포용 웹페이지 제작 프로젝트
 ```
-# Web Page Link: https://cube-escape-web.herokuapp.com/
+# Web Page Link: https://cube-escape-hanby-choi.koyeb.app/
 
 <br>
  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>
