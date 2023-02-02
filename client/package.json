@@ -9,6 +9,7 @@
     "ckeditor4-react": "^2.1.0",
     "core-js": "^3.6.4",
     "formik": "^1.5.8",
+    "http-proxy-middleware": "^2.0.6",
     "jquery.cookie": "^1.4.1",
     "moment": "^2.24.0",
     "react": "^16.8.6",
@@ -46,8 +47,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "http-proxy-middleware": "^1.0.3"
   }
 }
