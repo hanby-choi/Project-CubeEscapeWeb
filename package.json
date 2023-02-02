@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node server/index.js",
-    "backend": "npm server/index.js",
+    "backend": "node server/index.js",
     "frontend": "npm run start --prefix client",
     "dev": "npm run backend & npm run start --prefix client"
   },
